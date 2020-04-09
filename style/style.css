@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#map{
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    position: absolute;
+    z-index: 100;
+    font-size: 55px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    top: 130px;
+    left: 100px;
+
+}
+.search-container {
+    border-radius: 30px;
+    position: absolute;
+    z-index: 100;
+    top: 230px;
+    left: 100px;
+    width: 300px;
+    height: 60px;
+    background-color: #454e53;
+    display: flex;
+}
+.search-container .search{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search-container input{
+    width: 100%;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    color: white; 
+}
+
+.search-container input:focus{
+    outline: none;
+}
+.search i{
+    font-size: 22px;
+    color:white;
+}
+
+.stores-list-container{
+    width: 300px;
+    height: 380px;
+    position: absolute;
+    z-index: 100;
+    background: white;
+    left: 100px;
+    top: 330px;
+    border-radius: 30px;
+    bottom: 20px;
+    display: flex;
+    overflow-y: hidden;
+    padding-bottom: 30px;
+}
+
+.store-container{
+    border-bottom: 1px solid #979797;
+    display: flex;
+}
+.store-info-container{
+    flex-grow: 1;
+
+}
+
+
+.store-number-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.store-address{
+    font-size: 21px;
+    color: #514c4c;
+    margin-top: 30px;
+}
+
+
+.store-address span{
+    display: block;
+}
+.store-phone-number{
+    color: #b5adad;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.store-number{
+    width: 30px;
+    height: 30px;
+    background-color: #454e53;
+    color: #b5adad;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.store-list{
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+
+
+/* styles for windows when you click on each store */
+.info-phone-number{
+    color:#333;
+}
+.info-phone-number span{
+    display:block;
+}
+.info-address{
+    border-bottom: 1px solid #8888;
+}
+
+.info-address span{
+    font-size: 14px;
+    color: #514c4c;
+    margin-top: 2px;
+    display: block;
+}
+.info-container{
+    width: 190px;
+    height: 75px;
+}
+
+.my-border{
+    width: 16px;
+    height: 16px;
+    background-color: #28847f;
+    color: #ffff;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    color:#333;
+    text-decoration: none;
+}
